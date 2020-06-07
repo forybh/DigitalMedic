@@ -19,6 +19,9 @@ public class Home extends AppCompatActivity {
     private Button btn_userInfo;
     private Button btn_home;
     private Button btn_back;
+    private Button btn_dementia;
+    private Button btn_depress;
+    private Button btn_panic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +68,15 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home.this, LogIn.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_dementia = (Button)findViewById(R.id.btn_dementia);
+        btn_dementia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Dementia.class);
                 startActivity(intent);
             }
         });

@@ -1,16 +1,16 @@
 package com.example.digitamedic;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
-public class Dementia extends AppCompatActivity {
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+public class Lecture extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private View drawerView;
@@ -19,16 +19,11 @@ public class Dementia extends AppCompatActivity {
     private Button btn_close;
     private Button btn_home;
     private Button btn_back;
-    private Button btn_degree;
-    private Button btn_attend;
-    private Button btn_lecture;
-    private Button btn_gamelevel;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dementia);
+        setContentView(R.layout.activity_lecture);
 
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         drawerView = (View)findViewById(R.id.drawer);
@@ -53,43 +48,7 @@ public class Dementia extends AppCompatActivity {
         btn_userInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, UserInfo.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_degree = (Button)findViewById(R.id.btn_degree);
-        btn_degree.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Degree.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_attend = (Button)findViewById(R.id.btn_attend);
-        btn_attend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Attend.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_lecture = (Button)findViewById(R.id.btn_lecture);
-        btn_lecture.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Lecture.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_gamelevel = (Button)findViewById(R.id.btn_gamelevel);
-        btn_gamelevel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, GameLevel.class);
+                Intent intent = new Intent(Lecture.this, UserInfo.class);
                 startActivity(intent);
             }
         });
@@ -98,7 +57,7 @@ public class Dementia extends AppCompatActivity {
         btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Home.class);
+                Intent intent = new Intent(Lecture.this, Dementia.class);
                 startActivity(intent);
             }
         });
@@ -107,7 +66,7 @@ public class Dementia extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Home.class);
+                Intent intent = new Intent(Lecture.this, Dementia.class);
                 startActivity(intent);
             }
         });

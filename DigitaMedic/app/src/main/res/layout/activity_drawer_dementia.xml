@@ -22,5 +22,33 @@
         android:text="사용자 정보"
         >
     </Button>
+    <Button
+        android:id="@+id/btn_degree"
+        android:text="현재상태(호전도)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </Button>
+    <Button
+        android:id="@+id/btn_attend"
+        android:text="출석"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </Button>
+    <Button
+        android:id="@+id/btn_lecture"
+        android:text="강의 완료 확인"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </Button>
+    <Button
+        android:id="@+id/btn_gamelevel"
+        android:text="게임 단계"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </Button>
 
 </LinearLayout>
