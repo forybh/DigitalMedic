@@ -1,0 +1,99 @@
+package com.example.digitalmedic;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class Dementia extends AppCompatActivity {
+
+    private Button btn_user;
+    private Button btn_alarm;
+    private Button btn_test;
+    private Button btn_game;
+    private Button btn_sos;
+    private Button btn_attend;
+    private Button btn_chart;
+    private Button btn_instruction;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_dementia);
+
+        btn_user = (Button)findViewById(R.id.btn_user);
+        btn_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, Dementia.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_alarm = (Button)findViewById(R.id.btn_alarm);
+        btn_alarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, Dementia.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_test = (Button)findViewById(R.id.btn_test);
+        btn_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, DementiaTest.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_game = (Button)findViewById(R.id.btn_game);
+        btn_game.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, Game.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_sos = (Button)findViewById(R.id.btn_sos);
+        btn_sos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, Dementia.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_attend = (Button)findViewById(R.id.btn_attend);
+        btn_attend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, Dementia.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btn_chart = (Button)findViewById(R.id.btn_chart);
+        btn_chart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, Dementia.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_instruction = (Button)findViewById(R.id.btn_instruction);
+        btn_instruction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, Dementia.class);
+                startActivity(intent);
+            }
+        });
+    }
+}
