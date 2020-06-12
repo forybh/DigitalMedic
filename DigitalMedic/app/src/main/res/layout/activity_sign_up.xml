@@ -31,6 +31,7 @@
         android:background="@drawable/buttonshape"
         android:text="취소"
         android:textSize="18sp"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
