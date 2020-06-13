@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/layoutshape"
@@ -49,126 +50,124 @@
     <Button
         android:id="@+id/btn_game"
 
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
 
-        android:background="@drawable/buttonshape3"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/game"
         android:shadowColor="#A3A3A3"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Button"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/btn_sos"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toEndOf="@+id/btn_test"
         app:layout_constraintTop_toBottomOf="@+id/btn_center" />
 
     <Button
         android:id="@+id/btn_chart"
 
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
         android:layout_marginTop="24dp"
 
         android:layout_marginBottom="40dp"
-        android:background="@drawable/buttonshape3"
+        android:background="@drawable/chart"
         android:shadowColor="#A3A3A3"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Button"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_instruction"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btn_attend"
         app:layout_constraintTop_toBottomOf="@+id/btn_game"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <Button
         android:id="@+id/btn_instruction"
 
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
 
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="40dp"
-        android:background="@drawable/buttonshape3"
+        android:background="@drawable/howto"
         android:shadowColor="#A3A3A3"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Button"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_chart"
         app:layout_constraintTop_toBottomOf="@+id/btn_sos"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.428" />
 
     <Button
         android:id="@+id/btn_attend"
 
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="40dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="8dp"
 
         android:layout_marginTop="24dp"
         android:layout_marginBottom="40dp"
-        android:background="@drawable/buttonshape3"
+        android:background="@drawable/attend"
         android:shadowColor="#A3A3A3"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Button"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_chart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_test"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <Button
         android:id="@+id/btn_test"
 
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="40dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
 
-        android:layout_marginTop="40dp"
-        android:background="@drawable/buttonshape3"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/test"
         android:shadowColor="#A3A3A3"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Button"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_game"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_center" />
 
     <Button
         android:id="@+id/btn_sos"
 
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
 
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/buttonshape3"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/sos"
         android:shadowColor="#A3A3A3"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="5"
-        android:text="Button"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_game"
         app:layout_constraintTop_toBottomOf="@+id/btn_center" />
 
 

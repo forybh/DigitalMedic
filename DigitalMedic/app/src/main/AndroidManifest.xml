@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MemInit"></activity>
+        <activity android:name=".GameLevel"></activity>
+        <activity android:name=".MemInit" />
         <activity android:name=".PanicVideo" />
         <activity android:name=".PanicResult" />
         <activity android:name=".PanicTest" />
@@ -32,8 +33,8 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.DIAL_PHONE" />
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
 
 </manifest>
