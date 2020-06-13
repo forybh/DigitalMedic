@@ -33,39 +33,20 @@ public class LogIn extends AppCompatActivity {
         findViewById(R.id.btn_sign).setOnClickListener(onClickListener);
 
     }
-//        btn_logIn = findViewById(R.id.btn_logIn);
-//        btn_logIn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Login();
-//                Intent intent = new Intent(LogIn.this, Dementia.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        btn_sign = findViewById(R.id.btn_sign);
-//        btn_sign.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(LogIn.this, SignupActivity.class);
-//                startActivity(intent);
-//            }
-//        });
 
-        View.OnClickListener onClickListener = new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                switch (v.getId()){
-                    case R.id.btn_logIn:
-                        Login();
-                        break;
-                    case R.id.btn_sign:
-                        myStartActivity(MainActivity.class);
-                        break;
-
-                }
+    View.OnClickListener onClickListener = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.btn_logIn:
+                    Login();
+                    break;
+                case R.id.btn_sign:
+                    myStartActivity(MainActivity.class);
+                    break;
             }
-        };
+        }
+    };
 
     private void Login(){
         String email = ((EditText)findViewById(R.id.tv_id)).getText().toString();
