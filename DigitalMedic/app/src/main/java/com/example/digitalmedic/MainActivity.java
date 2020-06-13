@@ -17,22 +17,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn_signUp = findViewById(R.id.btn_signUp);
-        btn_signUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SignUp.class);
-                startActivity(intent);
-            }
-        });
-        btn_logIn = findViewById(R.id.btn_logIn);
-        btn_logIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LogIn.class);
-                startActivity(intent);
-            }
-        });
-
+        findViewById(R.id.btn_complete).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_logIn).setOnClickListener(onClickListener);
     }
+    View.OnClickListener onClickListener = new View.OnClickListener(){
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.btn_complete:
+                    myStartActivity(SignUp.class);
+                    break;
+                case R.id.btn_logIn:
+                    myStartActivity(LogIn.class);
+                    break;
+            }
+        }
+    };
+
+    private void myStartActivity(Class c) {
+        Intent intent = new Intent(this, c);
+        startActivity(intent);
+    }
+//        btn_signUp = findViewById(R.id.btn_signUp);
+//        btn_signUp.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+//        btn_logIn = findViewById(R.id.btn_logIn);
+//        btn_logIn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, LogIn.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//    }
 }

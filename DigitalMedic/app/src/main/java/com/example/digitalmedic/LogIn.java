@@ -1,39 +1,105 @@
 package com.example.digitalmedic;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class LogIn extends AppCompatActivity {
 
     private Button btn_logIn;
-    private Button btn_cancle;
+    private Button btn_sign;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
 
-        btn_logIn = findViewById(R.id.btn_logIn);
-        btn_logIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LogIn.this, Dementia.class);
-                startActivity(intent);
-            }
-        });
+        mAuth = FirebaseAuth.getInstance();
 
-        btn_cancle = findViewById(R.id.btn_cancle);
-        btn_cancle.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_logIn).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_sign).setOnClickListener(onClickListener);
+
+    }
+//        btn_logIn = findViewById(R.id.btn_logIn);
+//        btn_logIn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Login();
+//                Intent intent = new Intent(LogIn.this, Dementia.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        btn_sign = findViewById(R.id.btn_sign);
+//        btn_sign.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(LogIn.this, SignupActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        View.OnClickListener onClickListener = new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LogIn.this, MainActivity.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                switch (v.getId()){
+                    case R.id.btn_logIn:
+                        Login();
+                        break;
+                    case R.id.btn_sign:
+                        myStartActivity(MainActivity.class);
+                        break;
+
+                }
             }
-        });
+        };
+
+    private void Login(){
+        String email = ((EditText)findViewById(R.id.tv_id)).getText().toString();
+        String password = ((EditText)findViewById(R.id.tv_pw)).getText().toString();
+
+        if(email.length() > 0 && password.length() >0 ){
+            mAuth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                FirebaseUser user = mAuth.getCurrentUser();
+                                startToast("로그인 완료되었습니다.");
+                                myStartActivity(Dementia.class);
+                            } else {
+                                if(task.getException() != null){
+                                    startToast("아이디 비밀번호를 확인해주세요");
+                                }
+                            }
+                            // ...
+                        }
+                    });
+        }
+        else{
+            startToast("이메일 또는 비밀번호를 입력해 주세요");
+        }
+
+    }
+    private void startToast(String msg){
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
+    private void myStartActivity(Class c){
+        Intent intent = new Intent(this, c);
+        startActivity(intent);
+    }
 }
