@@ -1,13 +1,13 @@
 package com.example.digitalmedic;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -15,15 +15,19 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class MemInitActivity extends AppCompatActivity {
+public class MemInit extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mem_init);
-
         findViewById(R.id.btn_complete).setOnClickListener(onClickListener);
     }
-
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        finish();
+    }
 
     View.OnClickListener onClickListener = new View.OnClickListener(){
         @Override
@@ -82,5 +86,10 @@ public class MemInitActivity extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
+
+    public View.OnClickListener getOnClickListener() {
+        return onClickListener;
+    }
+
 
 }
