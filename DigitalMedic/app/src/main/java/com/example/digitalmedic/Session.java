@@ -12,8 +12,7 @@ public class Session {
     int PRIVATE_MODE = 0;
 
     // 파일이름
-    private static final String PREF_NAME = "인트로 슬라이더 테스트";
-
+    private static final String PREF_NAME = "DigitalMedic";
     private static final String IS_FIRST_TIME_LAUNCH = "첫 실행";
 
     public Session(Context context) {
