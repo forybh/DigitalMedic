@@ -10,6 +10,7 @@ import android.widget.Button;
 public class Game extends AppCompatActivity {
 
     private Button btn_back;
+    private Button btn_sdoku;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,14 @@ public class Game extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Game.this, Dementia.class);
+                startActivity(intent);
+            }
+        });
+        btn_sdoku = (Button)findViewById(R.id.btn_sdoku);
+        btn_sdoku.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Game.this, GameLevel.class);
                 startActivity(intent);
             }
         });
