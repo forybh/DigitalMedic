@@ -6,28 +6,23 @@ import android.os.Message;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class IntroActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-
-        IntroThread introThread = new IntroThread(handler);
-        introThread.start();
-    }
-
-    Handler handler;
-    {
-        handler = new Handler() {
+        new Timer().schedule(new TimerTask() {
             @Override
-            public void handleMessage(Message msg) {
-                if (msg.what == 1) {
-                    Intent intent = new Intent(IntroActivity.this, MainActivity.class);
-                    startActivity(intent);
-                }
+            public void run() {
+                Intent intent = new Intent(IntroActivity.this, WelcomeActivity.class);
+                startActivity(intent);
+                finish();
             }
-        };
+        }, 1200);
     }
 
 }
