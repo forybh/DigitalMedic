@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">DigitalMedic</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">다음</string>
+    <string name="skip">건너뛰기</string>
+    <string name="start">확인</string>
+
+    <string name="slide_1_title">단계별 게임</string>
+    <string name="slide_1_desc">단계별 게임을 통해 기억력을 높여보세요!</string>
+
+    <string name="slide_2_title">챗봇</string>
+    <string name="slide_2_desc">챗봇을 이용하여 상담을 해보세요!</string>
+
+    <string name="slide_3_title">명상 및 호흡법</string>
+    <string name="slide_3_desc">명상 및 호흡법을 통해 피로를 날려보세요!</string>
+
+    <string name="slide_4_title">출석체크</string>
+    <string name="slide_4_desc">매일매일 출석체크를 해보세요!</string>
 </resources>
