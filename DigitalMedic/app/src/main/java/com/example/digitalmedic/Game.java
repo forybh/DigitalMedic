@@ -10,6 +10,12 @@ import android.widget.Button;
 public class Game extends AppCompatActivity {
 
     private Button btn_back;
+<<<<<<< Updated upstream
+=======
+    private Button btn_sdoku;
+    private Button btn_number;
+    private Button btn_picture;
+>>>>>>> Stashed changes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,5 +30,32 @@ public class Game extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+<<<<<<< Updated upstream
+=======
+        btn_sdoku = (Button)findViewById(R.id.btn_sdoku);
+        btn_sdoku.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Game.this, GameLevel.class);
+                startActivity(intent);
+            }
+        });
+        btn_number = (Button)findViewById(R.id.btn_number);
+        btn_number.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Game.this, GameLevel.class);
+                startActivity(intent);
+            }
+        });
+        btn_picture = (Button)findViewById(R.id.btn_picture);
+        btn_picture.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Game.this, GameLevel.class);
+                startActivity(intent);
+            }
+        });
+>>>>>>> Stashed changes
     }
 }

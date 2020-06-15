@@ -11,8 +11,34 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< Updated upstream
         android:theme="@style/AppTheme">
         <activity android:name=".PanicVideo"></activity>
+=======
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".DementiaChart"></activity>
+        <activity android:name=".DementiaAttend" />
+        <activity android:name=".DementiaNotice" />
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GameLevel" />
+        <activity android:name=".MemInit" />
+        <activity android:name=".PanicVideo" />
+>>>>>>> Stashed changes
         <activity android:name=".PanicResult" />
         <activity android:name=".PanicTest" />
         <activity android:name=".Panic" />
@@ -26,6 +52,7 @@
         <activity android:name=".Game" />
         <activity android:name=".LogIn" />
         <activity android:name=".SignUp" />
+<<<<<<< Updated upstream
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,5 +61,11 @@
             </intent-filter>
         </activity>
     </application>
+=======
+    </application>
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+>>>>>>> Stashed changes
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>

@@ -38,7 +38,7 @@ public class Dementia extends AppCompatActivity {
         btn_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Dementia.class);
+                Intent intent = new Intent(Dementia.this, DementiaNotice.class);
                 startActivity(intent);
             }
         });
@@ -75,7 +75,7 @@ public class Dementia extends AppCompatActivity {
         btn_attend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Dementia.class);
+                Intent intent = new Intent(Dementia.this, DementiaAttend.class);
                 startActivity(intent);
             }
         });
@@ -85,7 +85,7 @@ public class Dementia extends AppCompatActivity {
         btn_chart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Dementia.class);
+                Intent intent = new Intent(Dementia.this, DementiaChart.class);
                 startActivity(intent);
             }
         });
