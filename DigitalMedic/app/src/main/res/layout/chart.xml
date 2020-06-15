@@ -19,7 +19,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+<<<<<<< Updated upstream
         android:id="@+id/btn_month1"
+=======
+<<<<<<< HEAD
+        android:id="@+id/btn_month"
+=======
+        android:id="@+id/btn_month1"
+>>>>>>> bh
+>>>>>>> Stashed changes
         android:layout_width="100dp"
         android:layout_height="200dp"
         android:layout_marginStart="28dp"
@@ -31,47 +39,115 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+<<<<<<< Updated upstream
         android:id="@+id/btn_month2"
         android:layout_width="100dp"
         android:layout_height="150dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="144dp"
+=======
+<<<<<<< HEAD
+        android:id="@+id/btn_month"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="304dp"
+=======
+        android:id="@+id/btn_month2"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="144dp"
+>>>>>>> bh
+>>>>>>> Stashed changes
         android:background="@drawable/gray_bar"
         android:text="13점"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< Updated upstream
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btn_month1"
+=======
+<<<<<<< HEAD
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toEndOf="@+id/btn_month"
+=======
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_month1"
+>>>>>>> bh
+>>>>>>> Stashed changes
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_recent"
         android:layout_width="100dp"
         android:layout_height="80dp"
+<<<<<<< Updated upstream
         android:layout_marginTop="372dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/yellow_bar"
         android:text="5점"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintStart_toEndOf="@+id/btn_month2"
+=======
+<<<<<<< HEAD
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/yellow_bar"
+        android:text="5점"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/btn_month"
+=======
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/yellow_bar"
+        android:text="5점"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/btn_month2"
+>>>>>>> bh
+>>>>>>> Stashed changes
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< Updated upstream
         android:layout_marginBottom="155dp"
         android:text="1개월"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView15"
         app:layout_constraintStart_toEndOf="@+id/textView12" />
+=======
+<<<<<<< HEAD
+        android:layout_marginBottom="148dp"
+        android:text="1개월"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="163dp" />
+=======
+        android:layout_marginBottom="155dp"
+        android:text="1개월"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView12" />
+>>>>>>> bh
+>>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="68dp"
+<<<<<<< Updated upstream
         android:layout_marginBottom="155dp"
+=======
+<<<<<<< HEAD
+        android:layout_marginBottom="148dp"
+=======
+        android:layout_marginBottom="155dp"
+>>>>>>> bh
+>>>>>>> Stashed changes
         android:text="최근"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -84,10 +160,23 @@
         android:layout_marginBottom="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< Updated upstream
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.4"
+=======
+<<<<<<< HEAD
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+=======
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+>>>>>>> bh
+>>>>>>> Stashed changes
         app:srcCompat="@drawable/chart_frame" />
 
     <TextView
@@ -95,11 +184,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
+<<<<<<< Updated upstream
         android:layout_marginBottom="155dp"
+=======
+<<<<<<< HEAD
+        android:layout_marginBottom="148dp"
+=======
+        android:layout_marginBottom="155dp"
+>>>>>>> bh
+>>>>>>> Stashed changes
         android:text="6개월"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
     <TextView
         android:id="@+id/textView21"
         android:layout_width="300dp"
@@ -112,4 +214,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView14" />
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> bh
+>>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         android:theme="@style/AppTheme">
         <activity android:name=".PanicVideo"></activity>
 =======
@@ -19,11 +20,48 @@
         <activity android:name=".DementiaChart"></activity>
         <activity android:name=".DementiaAttend" />
         <activity android:name=".DementiaNotice" />
+=======
+<<<<<<< HEAD
+        android:theme="@style/AppTheme.NoActionBar">
+
+=======
+<<<<<<< Updated upstream
+        android:theme="@style/AppTheme">
+        <activity android:name=".PanicVideo"></activity>
+=======
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".DementiaChart"></activity>
+        <activity android:name=".DementiaAttend" />
+        <activity android:name=".DementiaNotice" />
+>>>>>>> bh
+>>>>>>> Stashed changes
         <activity
             android:name=".IntroActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+<<<<<<< Updated upstream
+
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GameLevel" />
+        <activity android:name=".MemInit" />
+        <activity android:name=".PanicVideo" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+=======
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -39,6 +77,8 @@
         <activity android:name=".MemInit" />
         <activity android:name=".PanicVideo" />
 >>>>>>> Stashed changes
+>>>>>>> bh
+>>>>>>> Stashed changes
         <activity android:name=".PanicResult" />
         <activity android:name=".PanicTest" />
         <activity android:name=".Panic" />
@@ -53,9 +93,18 @@
         <activity android:name=".LogIn" />
         <activity android:name=".SignUp" />
 <<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+<<<<<<< Updated upstream
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+<<<<<<< Updated upstream
+=======
+>>>>>>> bh
+>>>>>>> Stashed changes
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -63,9 +112,24 @@
     </application>
 =======
     </application>
+<<<<<<< Updated upstream
     <uses-permission android:name="android.permission.DIAL_PHONE" />
 >>>>>>> Stashed changes
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+=======
+<<<<<<< HEAD
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+=======
+=======
+    </application>
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+>>>>>>> Stashed changes
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+>>>>>>> bh
+>>>>>>> Stashed changes
 
 </manifest>

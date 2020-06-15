@@ -91,16 +91,39 @@
 
     <Button
         android:id="@+id/button15"
+<<<<<<< Updated upstream
         android:layout_width="120dp"
         android:layout_height="60dp"
         android:background="@drawable/buttonshape3"
         android:text="  더보기"
         android:textColor="#424040"
         android:textSize="17sp"
+=======
+<<<<<<< HEAD
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:background="@drawable/notice_frame"
+        android:text="  더보기"
+        android:textColor="#424040"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="453dp" />
+=======
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape3"
+        android:text="  더보기"
+        android:textColor="#424040"
+        android:textSize="17sp"
+>>>>>>> Stashed changes
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
+<<<<<<< Updated upstream
+=======
+>>>>>>> bh
+>>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/textView20"
@@ -143,7 +166,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
+<<<<<<< Updated upstream
         android:id="@+id/tv_content"
+=======
+<<<<<<< HEAD
+        android:id="@+id/textView21"
+=======
+        android:id="@+id/tv_content"
+>>>>>>> bh
+>>>>>>> Stashed changes
         android:layout_width="276dp"
         android:layout_height="44dp"
         android:layout_marginStart="70dp"
@@ -160,6 +191,12 @@
         android:layout_marginTop="4dp"
         android:text="명상을 하며 마음을 평온하게 하는 시간을       가져보는게 어떨까요?"
         app:layout_constraintStart_toStartOf="parent"
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+=======
+>>>>>>> Stashed changes
         app:layout_constraintTop_toBottomOf="@+id/tv_content" />
 
     <Button
@@ -171,4 +208,8 @@
         android:background="@drawable/setting"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+<<<<<<< Updated upstream
+=======
+>>>>>>> bh
+>>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>

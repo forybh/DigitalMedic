@@ -25,6 +25,44 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="점"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toEndOf="@+id/tv_result"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="진단 결과"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+=======
+<<<<<<< Updated upstream
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 =======
@@ -57,12 +95,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> bh
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="50dp"
         android:layout_height="50dp"
+<<<<<<< Updated upstream
         android:layout_marginStart="60dp"
+=======
+<<<<<<< HEAD
+        android:layout_marginStart="36dp"
+=======
+        android:layout_marginStart="60dp"
+>>>>>>> bh
+>>>>>>> Stashed changes
         android:layout_marginBottom="75dp"
         android:autoSizeTextType="none"
         android:background="#81E385"
@@ -138,7 +185,15 @@
         app:layout_constraintStart_toEndOf="@+id/textView19" />
 
     <TextView
+<<<<<<< Updated upstream
         android:id="@+id/tv_content"
+=======
+<<<<<<< HEAD
+        android:id="@+id/textView21"
+=======
+        android:id="@+id/tv_content"
+>>>>>>> bh
+>>>>>>> Stashed changes
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -151,7 +206,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <Button
+<<<<<<< Updated upstream
         android:id="@+id/btn_ok"
+=======
+<<<<<<< HEAD
+        android:id="@+id/button6"
+=======
+        android:id="@+id/btn_ok"
+>>>>>>> bh
+>>>>>>> Stashed changes
         android:layout_width="98dp"
         android:layout_height="62dp"
         android:layout_marginBottom="28dp"
@@ -161,5 +224,12 @@
         app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> bh
 >>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>
