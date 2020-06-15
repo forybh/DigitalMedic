@@ -27,6 +27,7 @@ public class Dementia extends AppCompatActivity {
     private Button btn_attend;
     private Button btn_chart;
     private Button btn_instruction;
+    private Button btn_center;
     private String pNum;
 
     public Dementia() {
@@ -107,6 +108,14 @@ public class Dementia extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dementia.this, Dementia.class);
+                startActivity(intent);
+            }
+        });
+        btn_center = (Button)findViewById(R.id.btn_center);
+        btn_center.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, GameLevel.class);
                 startActivity(intent);
             }
         });
