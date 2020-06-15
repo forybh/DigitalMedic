@@ -9,59 +9,38 @@
     android:gravity="center"
     tools:context=".LogIn">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:background="#52B856"
-        android:text="아이디 찾기"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_pw" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:background="#52B856"
-        android:text="비밀번호 찾기"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
         android:id="@+id/btn_logIn"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginStart="75dp"
-        android:background="#6A6967"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/buttonshape3"
         android:text="로그인"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_cancel"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="75dp"
-        android:background="#DFD4D4"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/buttonshape"
         android:text="취소"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/tv_id"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="336dp"
         android:hint="ID를 입력하세요..."
         android:inputType="textEmailAddress"
         android:padding="10dp"
@@ -75,7 +54,7 @@
         android:id="@+id/tv_pw"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:hint="PassWord를 입력하세요..."
         android:inputType="textPassword"
         android:padding="10dp"
@@ -93,7 +72,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879"
         app:srcCompat="@drawable/main2" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="DIGITAL MEDIC"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
