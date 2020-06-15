@@ -32,7 +32,7 @@ public class Panic extends AppCompatActivity {
             }
         });
 
-        btn_alarm = (Button)findViewById(R.id.btn_alarm);
+        btn_alarm = (Button)findViewById(R.id.btn_notice);
         btn_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

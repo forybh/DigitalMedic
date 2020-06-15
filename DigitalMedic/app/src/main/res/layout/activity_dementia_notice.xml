@@ -91,14 +91,15 @@
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="200dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
         android:layout_marginTop="31dp"
         android:layout_marginBottom="96dp"
-        android:background="@drawable/notice_frame"
+        android:background="@drawable/buttonshape3"
+        android:gravity="center"
         android:text="  더보기"
         android:textColor="#424040"
-        android:textSize="17sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -164,4 +165,15 @@
         android:text="명상을 하며 마음을 평온하게 하는 시간을       가져보는게 어떨까요?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <Button
+        android:id="@+id/btn_set"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/setting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.646"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

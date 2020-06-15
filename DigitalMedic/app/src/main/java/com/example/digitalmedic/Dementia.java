@@ -20,7 +20,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Dementia extends AppCompatActivity {
     private Button btn_user;
-    private Button btn_alarm;
+    private Button btn_notice;
     private Button btn_test;
     private Button btn_game;
     private Button btn_sos;
@@ -28,6 +28,9 @@ public class Dementia extends AppCompatActivity {
     private Button btn_chart;
     private Button btn_instruction;
     private String pNum;
+
+    public Dementia() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +46,11 @@ public class Dementia extends AppCompatActivity {
             }
         });
 
-        btn_alarm = (Button)findViewById(R.id.btn_alarm);
-        btn_alarm.setOnClickListener(new View.OnClickListener() {
+        btn_notice = (Button)findViewById(R.id.btn_notice);
+        btn_notice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, DementiaNotice.class);
+                Intent intent = new Intent(Dementia.this , DementiaNotice.class);
                 startActivity(intent);
             }
         });
