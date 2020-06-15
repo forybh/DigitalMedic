@@ -20,10 +20,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_sign" />
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel" />
 
     <Button
-        android:id="@+id/btn_sign"
+        android:id="@+id/btn_cancel"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginStart="88dp"
