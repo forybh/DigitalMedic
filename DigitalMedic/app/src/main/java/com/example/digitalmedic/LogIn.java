@@ -30,7 +30,7 @@ public class LogIn extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         findViewById(R.id.btn_logIn).setOnClickListener(onClickListener);
-        findViewById(R.id.btn_sign).setOnClickListener(onClickListener);
+        findViewById(R.id.btn_cancel).setOnClickListener(onClickListener);
 
     }
 
@@ -41,7 +41,7 @@ public class LogIn extends AppCompatActivity {
                 case R.id.btn_logIn:
                     Login();
                     break;
-                case R.id.btn_sign:
+                case R.id.btn_cancel:
                     myStartActivity(MainActivity.class);
                     break;
             }

@@ -9,58 +9,67 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="60dp"
-        android:background="@drawable/buttonshape2"
+        android:background="@drawable/keep_calm"
         android:text="명상"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/title_select" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/buttonshape2"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/breath"
         android:text="호흡법"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/title_select"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="강의 선택"
-        android:textSize="24sp"
+        android:textColor="#090505"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:text="명상 설명"
+        android:id="@+id/calm_intro"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="110dp"
+        android:text="마음을 편안하게 만들어주는 명상"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/title_select" />
 
     <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="228dp"
-        android:text="호흡법 설명"
+        android:id="@+id/breath_intro"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="116dp"
+        android:text="마음을 차분하게 만들어주는 호흡"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.644"
         app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/calm_intro" />
 
     <Button
         android:id="@+id/btn_back"

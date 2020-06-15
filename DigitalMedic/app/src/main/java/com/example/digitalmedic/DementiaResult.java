@@ -25,7 +25,7 @@ public class DementiaResult extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DementiaResult.this, DementiaTest.class);
+                Intent intent = new Intent(DementiaResult.this, Dementia.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1074100473251-hok6t44pmkpaf14oect8p29p5r4ln23k.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://digitalmedic-5865b.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1074100473251</string>
+    <string name="google_api_key" translatable="false">AIzaSyBzbAjiZMq4tEfbYiSEDPLCTnjyFAfFgls</string>
+    <string name="google_app_id" translatable="false">1:1074100473251:android:5103d8770b44ee86cb9e16</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBzbAjiZMq4tEfbYiSEDPLCTnjyFAfFgls</string>
+    <string name="google_storage_bucket" translatable="false">digitalmedic-5865b.appspot.com</string>
+    <string name="project_id" translatable="false">digitalmedic-5865b</string>
+</resources>

@@ -36,7 +36,9 @@ public class MemInit extends AppCompatActivity {
                 case R.id.btn_complete:
                     memInit();
                     break;
-
+                case R.id.btn_cancel:
+                    finish();
+                    break;
             }
         }
     };
