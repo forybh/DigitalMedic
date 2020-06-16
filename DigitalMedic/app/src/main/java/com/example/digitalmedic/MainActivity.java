@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btn_signUp;
     private Button btn_logIn;
+    private Button btn_hidden;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,15 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.btn_complete).setOnClickListener(onClickListener);
         findViewById(R.id.btn_logIn).setOnClickListener(onClickListener);
+
+        btn_hidden =(Button)findViewById(R.id.btn_hidden);
+        btn_hidden.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Meditation.class);
+                startActivity(intent);
+            }
+        });
     }
     View.OnClickListener onClickListener = new View.OnClickListener(){
         @Override
