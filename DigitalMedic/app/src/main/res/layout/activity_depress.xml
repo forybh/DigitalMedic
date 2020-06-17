@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/layoutshape"
@@ -51,74 +50,124 @@
         app:layout_constraintVertical_bias="0.356" />
 
     <Button
-        android:id="@+id/btn_test"
-        android:layout_width="95dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/test"
-        app:layout_constraintEnd_toStartOf="@+id/btn_chatbot"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_center" />
+        android:id="@+id/btn_chatting"
 
-    <Button
-        android:id="@+id/btn_chatbot"
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:layout_marginTop="25dp"
+
         android:background="@drawable/chatbot"
-        app:layout_constraintEnd_toStartOf="@+id/btn_mind"
+        android:shadowColor="#A3A3A3"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_video"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toEndOf="@+id/btn_test"
         app:layout_constraintTop_toBottomOf="@+id/btn_center" />
 
     <Button
-        android:id="@+id/btn_mind"
+        android:id="@+id/btn_chart"
+
         android:layout_width="95dp"
         android:layout_height="95dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/chart"
+        android:shadowColor="#A3A3A3"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_instruction"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/btn_attend"
+        app:layout_constraintTop_toBottomOf="@+id/btn_chatting" />
+
+    <Button
+        android:id="@+id/btn_instruction"
+
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/mind"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/howto"
+        android:shadowColor="#A3A3A3"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_chatbot"
-        app:layout_constraintTop_toBottomOf="@+id/btn_center" />
+        app:layout_constraintStart_toEndOf="@+id/btn_chart"
+        app:layout_constraintTop_toBottomOf="@+id/btn_video" />
 
     <Button
         android:id="@+id/btn_attend"
+
         android:layout_width="95dp"
         android:layout_height="95dp"
         android:layout_marginStart="8dp"
+
         android:layout_marginTop="20dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/attend"
+        android:shadowColor="#A3A3A3"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_chart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_test" />
 
     <Button
-        android:id="@+id/btn_chart"
+        android:id="@+id/btn_test"
+
         android:layout_width="95dp"
         android:layout_height="95dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/chart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_howto"
-        app:layout_constraintStart_toEndOf="@+id/btn_attend"
-        app:layout_constraintTop_toBottomOf="@+id/btn_chatbot" />
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="25dp"
+        android:background="@drawable/test"
+        android:shadowColor="#A3A3A3"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_chatting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_center" />
 
     <Button
-        android:id="@+id/btn_howto"
+        android:id="@+id/btn_video"
+
         android:layout_width="95dp"
         android:layout_height="95dp"
-        android:layout_marginTop="20dp"
+
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/howto"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/mind"
+        android:shadowColor="#A3A3A3"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_chart"
-        app:layout_constraintTop_toBottomOf="@+id/btn_mind" />
+        app:layout_constraintStart_toEndOf="@+id/btn_chatting"
+        app:layout_constraintTop_toBottomOf="@+id/btn_center" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

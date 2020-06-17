@@ -10,6 +10,8 @@ import android.widget.Button;
 public class DepressVideo extends AppCompatActivity {
 
     private Button btn_back;
+    private Button btn_meditation;
+    private Button btn_breath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,24 @@ public class DepressVideo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(DepressVideo.this, Depress.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_meditation =(Button)findViewById(R.id.btn_meditation);
+        btn_meditation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DepressVideo.this, Meditation.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_breath =(Button)findViewById(R.id.btn_breath);
+        btn_breath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DepressVideo.this, DepressBreath.class);
                 startActivity(intent);
             }
         });
