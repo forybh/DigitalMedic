@@ -44,6 +44,8 @@
         <activity android:name=".SignUp" />
         <activity android:name=".UserInfo"/>
         <activity android:name=".EditInfo"/>
+        <activity android:name=".GameLevelNum"/>
+        <activity android:name=".NumberGame"/>
 
     </application>
     <uses-permission android:name="android.permission.DIAL_PHONE" />

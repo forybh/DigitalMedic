@@ -27,6 +27,7 @@ public class Game extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         btn_sdoku = (Button)findViewById(R.id.btn_sdoku);
         btn_sdoku.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +36,7 @@ public class Game extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         btn_number = (Button)findViewById(R.id.btn_number);
         btn_number.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +45,7 @@ public class Game extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         btn_picture = (Button)findViewById(R.id.btn_picture);
         btn_picture.setOnClickListener(new View.OnClickListener() {
             @Override
