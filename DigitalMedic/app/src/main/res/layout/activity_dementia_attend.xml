@@ -7,21 +7,6 @@
     android:background="@drawable/layoutshape">
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="152dp"
-        android:text="7월"
-        android:textColor="#FF9800"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,72 +20,91 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="300dp"
-        android:layout_height="350dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"
-        app:srcCompat="@drawable/celendar" />
-
-    <ImageView
-        android:id="@+id/star"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="296dp"
-        android:layout_marginEnd="72dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/star" />
-
     <TextView
-        android:layout_width="303dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="196dp"
-        android:layout_marginEnd="3dp"
-        android:background="#88FFC107"
-        android:text="   일      월      화      수      목      금      토"
-        android:textColor="#000000"
-        android:textColorHighlight="#FFFDFD"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
-        android:text="출석일수  :"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="95dp"
-        android:layout_marginEnd="160dp"
-        android:text="1"
-        android:textColor="#FB6A3C"
-        android:textColorHint="#FFFFFF"
-        android:textSize="25sp"
+        android:layout_marginTop="4dp"
+        android:text="오늘의 미션"
+        android:textColor="#FF9800"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/et_mission"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="오늘 무슨 일이 있었나요?"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_1" />
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="미션 1 : 오늘 있었던 일 적기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="미션2 : 자가진단 테스트 하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_mission" />
+
+    <CheckBox
+        android:id="@+id/cb_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="미션 3 : 게임 3판 하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_2" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="342dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/june"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_3" />
+
+    <Button
+        android:id="@+id/btn_star"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/star"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

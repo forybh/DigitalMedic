@@ -28,7 +28,7 @@ public class DementiaResult extends AppCompatActivity {
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DementiaResult.this, Dementia.class);
+                Intent intent = new Intent(DementiaResult.this, DementiaTest.class);
                 startActivity(intent);
             }
         });
@@ -41,6 +41,8 @@ public class DementiaResult extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
         tv_content =(TextView)findViewById(R.id.tv_content);
         tv_result =(TextView)findViewById(R.id.tv_result);
         tv_result.setText(String.valueOf(result));

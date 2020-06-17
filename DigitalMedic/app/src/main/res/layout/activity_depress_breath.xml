@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutshape">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="호흡"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="314dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFC107"
+                android:gravity="center"
+                android:text="강의 목록"
+                android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btn_video1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape4"
+                android:text="1. 호흡의 효능"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_video2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape4"
+                android:text="2. 복식호흡 하는 법"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_video3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape4"
+                android:text="3. 하루 5분 호흡법"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_video4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape4"
+                android:text="4. 삶을 바꾸는 호흡법"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_video5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape4"
+                android:text="5. 호흡의 과학적 이해"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_video6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape4"
+                android:text="6. 마음이 차분해지는 호흡법"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_video7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape4"
+                android:text="7. 긍정적 에너지를 위한 호흡"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_video8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshape4"
+                android:text="8. 올바른 호흡 바뀌는 인생"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="338dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/breathing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/buttonshape"
+        android:text="호흡 종료"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_music"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/buttonshape3"
+        android:text="호흡 시작"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="580dp"
+        android:background="@drawable/left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
