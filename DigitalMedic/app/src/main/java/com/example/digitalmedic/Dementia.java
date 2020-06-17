@@ -78,7 +78,22 @@ public class Dementia extends AppCompatActivity {
         btn_sos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                pNum = "01051410551";
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+                DocumentReference docRef = db.collection("users").document(user.getUid());
+                docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            String data[] = document.getData().values().toArray(new String[5]);
+                            pNum = data[4];
+                        } else {
+
+                        }
+                    }
+                });
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + pNum));
                 startActivity(intent);
             }
