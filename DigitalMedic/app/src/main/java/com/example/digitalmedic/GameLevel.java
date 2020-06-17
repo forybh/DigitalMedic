@@ -1,10 +1,13 @@
 package com.example.digitalmedic;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class GameLevel extends AppCompatActivity {
+    private Button btn_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -39,7 +39,7 @@ public class Game extends AppCompatActivity {
         btn_number.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Game.this, GameLevel.class);
+                Intent intent = new Intent(Game.this, GameLevelNum.class);
                 startActivity(intent);
             }
         });
