@@ -8,10 +8,10 @@
 
 
     <TextView
-        android:id="@+id/textView11_sdo"
+        android:id="@+id/textView11_pic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="게임 단계"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
@@ -28,11 +28,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView11_sdo"
+        app:layout_constraintTop_toTopOf="@+id/textView11_pic"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_1_sdo"
+        android:id="@+id/btn_1_pic"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginBottom="76dp"
@@ -45,20 +45,20 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_2_sdo"
+        android:id="@+id/btn_2_pic"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/level2"
         android:text="2"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_1_sdo"
+        app:layout_constraintBottom_toTopOf="@+id/btn_1_pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_3_sdo"
+        android:id="@+id/btn_3_pic"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginBottom="164dp"
@@ -71,19 +71,19 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_4_sdo"
+        android:id="@+id/btn_4_pic"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/level4"
         android:text="4"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_3_sdo"
+        app:layout_constraintBottom_toTopOf="@+id/btn_3_pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_7_sdo"
+        android:id="@+id/btn_7_pic"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="436dp"
@@ -96,7 +96,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_6_sdo"
+        android:id="@+id/btn_6_pic"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="340dp"
@@ -109,7 +109,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_5_sdo"
+        android:id="@+id/btn_5_pic"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="316dp"
@@ -122,7 +122,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_8_sdo"
+        android:id="@+id/btn_8_pic"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginBottom="504dp"
@@ -135,7 +135,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button28_sdo"
+        android:id="@+id/button28_pic"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="72dp"
@@ -145,13 +145,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button29_sdo"
+        android:id="@+id/button29_pic"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/main3"
-        app:layout_constraintBottom_toTopOf="@+id/btn_5_sdo"
+        app:layout_constraintBottom_toTopOf="@+id/btn_5_pic"
         app:layout_constraintEnd_toEndOf="parent" />
 
 
