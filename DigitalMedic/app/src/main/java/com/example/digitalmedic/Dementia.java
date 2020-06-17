@@ -42,7 +42,7 @@ public class Dementia extends AppCompatActivity {
         btn_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Dementia.class);
+                Intent intent = new Intent(Dementia.this, UserInfo.class);
                 startActivity(intent);
             }
         });
@@ -88,7 +88,7 @@ public class Dementia extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             DocumentSnapshot document = task.getResult();
                             String data[] = document.getData().values().toArray(new String[5]);
-                            pNum = data[4];
+                            pNum = data[2];
                         } else {
 
                         }
@@ -122,7 +122,7 @@ public class Dementia extends AppCompatActivity {
         btn_instruction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, Dementia.class);
+                Intent intent = new Intent(Dementia.this, DementiaInstruction.class);
                 startActivity(intent);
             }
         });

@@ -27,7 +27,7 @@ public class Depress extends AppCompatActivity {
         btn_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, Panic.class);
+                Intent intent = new Intent(Depress.this, UserInfo.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +36,7 @@ public class Depress extends AppCompatActivity {
         btn_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, Panic.class);
+                Intent intent = new Intent(Depress.this, DepressNotice.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class Depress extends AppCompatActivity {
         btn_test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, PanicTest.class);
+                Intent intent = new Intent(Depress.this, DepressTest.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +54,7 @@ public class Depress extends AppCompatActivity {
         btn_chatting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, Panic.class);
+                Intent intent = new Intent(Depress.this, Chat.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +82,7 @@ public class Depress extends AppCompatActivity {
         btn_chart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, Panic.class);
+                Intent intent = new Intent(Depress.this, Depress.class);
                 startActivity(intent);
             }
         });
@@ -91,7 +91,7 @@ public class Depress extends AppCompatActivity {
         btn_instruction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, Panic.class);
+                Intent intent = new Intent(Depress.this, Depress.class);
                 startActivity(intent);
             }
         });

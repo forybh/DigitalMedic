@@ -115,7 +115,7 @@
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="전에 가 장소를 기억하지 못한다."
+        android:text="전에 갔던 장소를 기억하지 못한다."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox10" />
 

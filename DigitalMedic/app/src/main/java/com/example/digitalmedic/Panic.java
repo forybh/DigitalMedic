@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.firestore.auth.User;
+
 public class Panic extends AppCompatActivity {
 
     private Button btn_user;
@@ -27,7 +29,7 @@ public class Panic extends AppCompatActivity {
         btn_user.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Panic.this, Panic.class);
+                Intent intent = new Intent(Panic.this, UserInfo.class);
                 startActivity(intent);
             }
         });
@@ -36,7 +38,7 @@ public class Panic extends AppCompatActivity {
         btn_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Panic.this, Panic.class);
+                Intent intent = new Intent(Panic.this, PanicNotice.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +56,7 @@ public class Panic extends AppCompatActivity {
         btn_chatting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Panic.this, Panic.class);
+                Intent intent = new Intent(Panic.this, Chat2.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +65,7 @@ public class Panic extends AppCompatActivity {
         btn_video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Panic.this, Panic.class);
+                Intent intent = new Intent(Panic.this, PanicVideo.class);
                 startActivity(intent);
             }
         });
@@ -72,7 +74,7 @@ public class Panic extends AppCompatActivity {
         btn_attend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Panic.this, Panic.class);
+                Intent intent = new Intent(Panic.this, PanicAttend.class);
                 startActivity(intent);
             }
         });

@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     android:background="@drawable/layoutshape">
 
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -162,7 +172,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="11dp"
-        android:text="명상을 하며 마음을 평온하게 하는 시간을       가져보는게 어떨까요?"
+        android:text="미션을 완료하여 출석체크 하러 가볼까요?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
