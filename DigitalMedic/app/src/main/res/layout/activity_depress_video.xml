@@ -8,7 +8,7 @@
     tools:context=".DepressVideo">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_meditation"
         android:layout_width="160dp"
         android:layout_height="160dp"
         android:layout_marginStart="20dp"
@@ -31,7 +31,7 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_meditation" />
 
     <TextView
         android:id="@+id/title_select"
@@ -55,7 +55,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/btn_meditation"
         app:layout_constraintTop_toBottomOf="@+id/title_select" />
 
     <TextView
