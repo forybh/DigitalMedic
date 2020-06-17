@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutshape">
+
+    <ImageView
+        android:id="@+id/number_1"
+        android:layout_width="0dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/number_4"
+        app:layout_constraintEnd_toStartOf="@+id/number_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/number_1" />
+
+    <ImageView
+        android:id="@+id/number_2"
+        android:layout_width="69dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/number_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/number_2" />
+
+    <ImageView
+        android:id="@+id/number_3"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/number_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/number_3" />
+
+    <ImageView
+        android:id="@+id/number_4"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="319dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/number_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_1"
+        app:srcCompat="@drawable/number_4" />
+
+    <ImageView
+        android:id="@+id/number_5"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="317dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/number_6"
+        app:layout_constraintStart_toEndOf="@+id/number_4"
+        app:layout_constraintTop_toBottomOf="@+id/number_2"
+        app:srcCompat="@drawable/number_5" />
+
+    <ImageView
+        android:id="@+id/number_6"
+        android:layout_width="69dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="316dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/number_5"
+        app:layout_constraintTop_toBottomOf="@+id/number_3"
+        app:srcCompat="@drawable/number_6" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="250dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="숫자 맞추기 게임"
+        android:textAppearance="bold"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/number_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
