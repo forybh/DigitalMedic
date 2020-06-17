@@ -36,12 +36,14 @@
         android:id="@+id/number_3"
         android:layout_width="69dp"
         android:layout_height="67dp"
+        android:layout_marginStart="295dp"
         android:layout_marginTop="350dp"
         android:layout_marginEnd="59dp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/number_6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/number_1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/number_3" />
 
@@ -49,8 +51,8 @@
         android:id="@+id/number_4"
         android:layout_width="69dp"
         android:layout_height="69dp"
-        android:layout_marginTop="70dp"
         android:layout_marginStart="53dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="58dp"
         android:layout_marginBottom="319dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,8 +65,8 @@
         android:id="@+id/number_5"
         android:layout_width="69dp"
         android:layout_height="72dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginTop="70dp"
         android:layout_marginBottom="317dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/number_6"
@@ -75,8 +77,8 @@
     <ImageView
         android:id="@+id/number_6"
         android:layout_width="69dp"
-        android:layout_height="73dp"
-        android:layout_marginTop="68dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="98dp"
         android:layout_marginEnd="59dp"
         android:layout_marginBottom="316dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,34 +87,46 @@
         app:layout_constraintTop_toBottomOf="@+id/number_3"
         app:srcCompat="@drawable/number_6" />
 
+
     <TextView
         android:id="@+id/number"
-        android:layout_width="250dp"
+        android:layout_width="350dp"
         android:layout_height="53dp"
         android:layout_marginTop="132dp"
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="숫자 맞추기 게임"
+        android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/number_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="116dp"
         android:gravity="center"
-        android:text="게임 시작"
+        android:text="1 을 누를 차례입니다."
         android:textColor="#2E2EFE"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_back_num"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/left"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
