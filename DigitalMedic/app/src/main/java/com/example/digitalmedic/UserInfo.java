@@ -21,6 +21,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class UserInfo extends AppCompatActivity {
     private static String TAG = "UserInfo";
     private Button btn_logout;
+    private Button btn_edit;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +35,7 @@ public class UserInfo extends AppCompatActivity {
         final TextView setIll = findViewById(R.id.et_illness2);
         final TextView setPhone = findViewById(R.id.et_phoneNum2);
         final TextView setMomPhone= findViewById(R.id.et_phonemom2);
-
+        final TextView setAddress= findViewById(R.id.et_address);
 
 
         DocumentReference docRef = db.collection("users").document(user.getUid());
@@ -48,7 +49,8 @@ public class UserInfo extends AppCompatActivity {
                     setName.setText("이름 " + data[1]);
                     setIll.setText("병명 " + data[3]);
                     setPhone.setText("핸드폰 번호 " + data[0]);
-                    setMomPhone.setText("보호자 번호 " + data[4]);
+                    setMomPhone.setText("보호자 번호 " + data[2]);
+                    setAddress.setText("주소 " + data[4]);
                 } else {
                     Log.d(TAG, "get failed with ", task.getException());
                 }
@@ -60,6 +62,14 @@ public class UserInfo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 myStartActivity(MainActivity.class);
+            }
+        });
+
+        btn_edit = (Button)findViewById(R.id.btn_edit);
+        btn_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myStartActivity(EditInfo.class);
             }
         });
 
