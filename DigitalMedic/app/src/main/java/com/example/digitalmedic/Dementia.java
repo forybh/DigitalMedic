@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,10 +32,14 @@ public class Dementia extends AppCompatActivity {
     private Button btn_attend;
     private Button btn_chart;
     private Button btn_instruction;
-    private Button btn_center;
-    private String pNum;
     private Button btn_prev;
     private Button btn_next;
+    private String pNum;
+
+    private ImageView sudoku_click;
+    private ImageView number_click;
+    private ImageView picture_click;
+
 
 
     public Dementia() {
@@ -62,11 +67,44 @@ public class Dementia extends AppCompatActivity {
             }
         });
 
+        //각 이미지 클릭 시 그 페이지로 이동
+        sudoku_click = (ImageView) findViewById(R.id.sudoku_click);
+        number_click = (ImageView) findViewById(R.id.number_click);
+        picture_click = (ImageView) findViewById(R.id.picture_click);
 
+        sudoku_click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, GameLevelSudoku.class);
+                startActivity(intent);
+            }
+        });
+
+        number_click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, GameLevelNum.class);
+                startActivity(intent);
+            }
+        });
+
+        picture_click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this, GameLevelPic.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //ViewFlipper 구현
         flipper = (ViewFlipper) findViewById(R.id.btn_center);
         Animation showIn = AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left);
         flipper.setInAnimation(showIn);
         flipper.setOutAnimation(this, android.R.anim.slide_out_right);
+
+        //자동으로 넘어가기
+
         flipper.setFlipInterval(2000);
         flipper.startFlipping();
 
