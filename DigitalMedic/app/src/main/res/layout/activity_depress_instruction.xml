@@ -4,6 +4,194 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DepressInstruction">
+    android:background="@drawable/layoutshape">
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="사용법"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+
+        android:id="@+id/ScrollView1"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <Button
+
+                android:id="@+id/btn_test"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_test1" />
+
+            <Button
+
+                android:id="@+id/btn_test_result"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_test2" />
+
+            <Button
+
+                android:id="@+id/btn_chat"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/chatbot2" />
+
+            <Button
+
+                android:id="@+id/btn_meditation"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/use_meditation" />
+
+
+            <Button
+
+                android:id="@+id/btn_meditation2"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/use_meditation2" />
+
+            <Button
+
+                android:id="@+id/btn_breath"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_breath1" />
+
+
+            <Button
+
+                android:id="@+id/btn_breath2"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_breath2" />
+
+            <Button
+
+                android:id="@+id/btn_attend1"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_attendace1" />
+
+            <Button
+
+                android:id="@+id/btn_attend2"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_attendace2" />
+
+
+            <Button
+
+                android:id="@+id/btn_notice1"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_notice1" />
+
+
+            <Button
+
+                android:id="@+id/btn_notice2"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_notice2" />
+
+            <Button
+
+                android:id="@+id/btn_setting1"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_setting1" />
+
+
+            <Button
+
+                android:id="@+id/btn_setting2"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_setting2" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

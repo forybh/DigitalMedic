@@ -91,7 +91,7 @@ public class Depress extends AppCompatActivity {
         btn_instruction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, Depress.class);
+                Intent intent = new Intent(Depress.this, DepressInstruction.class);
                 startActivity(intent);
             }
         });
