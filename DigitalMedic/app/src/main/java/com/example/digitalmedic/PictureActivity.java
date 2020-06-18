@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,11 +34,22 @@ public class PictureActivity extends AppCompatActivity {
     Vector<Picture> pictures;
     Vector<Integer> selectedPos;
     PictureAdapter adapter;
+    private Button btn_back;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(PictureActivity.this, R.layout.activity_game_picture);
+
+        btn_back = (Button) findViewById(R.id.btn_back);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PictureActivity.this, GameLevelPic.class);
+                startActivity(intent);
+            }
+        });
+
         binding.restartBtn.setOnClickListener(view -> recreate());
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 4);
         binding.pictureViews.setLayoutManager(gridLayoutManager);
