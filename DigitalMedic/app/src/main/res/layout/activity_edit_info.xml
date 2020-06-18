@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layoutshape"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buttonshape3"
+        android:text="수정"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_cancel" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buttonshape"
+        android:text="취소"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="회원정보수정"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="이름을 입력해주세요"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="주소를 입력하세요"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toTopOf="@+id/et_phoneNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_phoneNum"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="핸드폰 번호를 입력해주세요"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_address" />
+
+    <EditText
+        android:id="@+id/et_momPhone"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="보호자 번호를 입력해주세요"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phoneNum" />
+
+    <EditText
+        android:id="@+id/et_illness"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="병명을 입력하세요(ex. 치매, 우울증, 공황장애)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_momPhone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

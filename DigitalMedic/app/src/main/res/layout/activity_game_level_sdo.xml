@@ -11,7 +11,7 @@
         android:id="@+id/textView11_sdo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="게임 단계"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button13_pic"
+        android:id="@+id/button13_sdo"
         android:layout_width="328dp"
         android:layout_height="541dp"
         android:background="@drawable/road"
