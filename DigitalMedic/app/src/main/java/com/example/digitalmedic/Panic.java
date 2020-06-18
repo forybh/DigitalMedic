@@ -93,7 +93,7 @@ public class Panic extends AppCompatActivity {
         btn_instruction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Panic.this, Panic.class);
+                Intent intent = new Intent(Panic.this, PanicInstruction.class);
                 startActivity(intent);
             }
         });

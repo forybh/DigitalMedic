@@ -141,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:gravity="center"
-        android:text="운동과 외부 사회활동을 잘 유지하시고, 치매 예방 게임을 통해 치매를 예방하세요."
+        android:text='"운동과 외부 사회활동을 잘 유지하시고, 명상과 호흡법을 통해 예방하세요."'
         android:textColor="#6F736F"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

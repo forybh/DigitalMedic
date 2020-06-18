@@ -61,7 +61,7 @@
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/use_dementia" />
+                android:background="@drawable/panic_test1" />
 
             <Button
 
@@ -71,39 +71,59 @@
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/use_dementia_result" />
+                android:background="@drawable/panic_test2" />
 
             <Button
 
-                android:id="@+id/btn_game1"
+                android:id="@+id/btn_chat"
 
                 android:layout_width="330dp"
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/use_dementia_game1" />
+                android:background="@drawable/chatbot2" />
 
             <Button
 
-                android:id="@+id/btn_game2"
+                android:id="@+id/btn_meditation"
 
                 android:layout_width="330dp"
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/use_dementia_game2" />
-
+                android:background="@drawable/use_meditation" />
 
 
             <Button
 
-                android:id="@+id/btn_sos"
+                android:id="@+id/btn_meditation2"
 
                 android:layout_width="330dp"
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/use_dementia_sos" />
+                android:background="@drawable/use_meditation2" />
+
+            <Button
+
+                android:id="@+id/btn_breath"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_breath1" />
+
+
+            <Button
+
+                android:id="@+id/btn_breath2"
+
+                android:layout_width="330dp"
+
+                android:layout_height="400dp"
+
+                android:background="@drawable/depress_breath2" />
 
             <Button
 
@@ -113,7 +133,7 @@
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/use_dementia_attend1" />
+                android:background="@drawable/panic_attend" />
 
             <Button
 
@@ -123,7 +143,7 @@
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/use_dementia_attend2" />
+                android:background="@drawable/panic_attend2" />
 
 
             <Button
@@ -134,7 +154,7 @@
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/user_dementia_notice1" />
+                android:background="@drawable/panic_notice1" />
 
 
             <Button
@@ -145,7 +165,7 @@
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/user_dementia_notice2" />
+                android:background="@drawable/panic_notice2" />
 
             <Button
 
@@ -155,7 +175,7 @@
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/dementia_setting1" />
+                android:background="@drawable/panic_setting" />
 
 
             <Button
@@ -166,18 +186,8 @@
 
                 android:layout_height="400dp"
 
-                android:background="@drawable/dementia_setting2" />
+                android:background="@drawable/depress_setting2" />
 
-
-            <Button
-
-                android:id="@+id/btn_chart"
-
-                android:layout_width="330dp"
-
-                android:layout_height="400dp"
-
-                android:background="@drawable/use_dementia_chart" />
 
         </LinearLayout>
 
