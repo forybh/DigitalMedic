@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/layoutshape"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TableLayout
-        android:layout_width="337dp"
-        android:layout_height="337dp"
+        android:layout_width="338dp"
+        android:layout_height="348dp"
         android:layout_marginStart="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,7 +28,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="0" />
+                android:tag="0"
+                tools:layout="@layout/activity_sudoku_cell" />
 
             <fragment
                 android:id="@+id/cellGroupFragment2"
@@ -35,7 +37,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="1" />
+                android:tag="1"
+                tools:layout="@layout/activity_sudoku_cell" />
 
             <fragment
                 android:id="@+id/cellGroupFragment3"
@@ -43,7 +46,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="2" />
+                android:tag="2"
+                tools:layout="@layout/activity_sudoku_cell" />
 
         </TableRow>
 
@@ -57,7 +61,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="3" />
+                android:tag="3"
+                tools:layout="@layout/activity_sudoku_cell" />
 
             <fragment
                 android:id="@+id/cellGroupFragment5"
@@ -65,7 +70,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="4" />
+                android:tag="4"
+                tools:layout="@layout/activity_sudoku_cell" />
 
             <fragment
                 android:id="@+id/cellGroupFragment6"
@@ -73,7 +79,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="5" />
+                android:tag="5"
+                tools:layout="@layout/activity_sudoku_cell" />
         </TableRow>
 
         <TableRow
@@ -86,7 +93,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="6" />
+                android:tag="6"
+                tools:layout="@layout/activity_sudoku_cell" />
 
             <fragment
                 android:id="@+id/cellGroupFragment8"
@@ -94,7 +102,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="7" />
+                android:tag="7"
+                tools:layout="@layout/activity_sudoku_cell" />
 
             <fragment
                 android:id="@+id/cellGroupFragment9"
@@ -102,7 +111,8 @@
                 android:layout_width="92dp"
                 android:layout_height="106dp"
                 android:layout_weight="1"
-                android:tag="8" />
+                android:tag="8"
+                tools:layout="@layout/activity_sudoku_cell" />
         </TableRow>
 
     </TableLayout>

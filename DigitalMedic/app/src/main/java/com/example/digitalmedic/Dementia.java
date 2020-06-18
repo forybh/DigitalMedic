@@ -130,7 +130,7 @@ public class Dementia extends AppCompatActivity {
         btn_center.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dementia.this, GameLevel.class);
+                Intent intent = new Intent(Dementia.this, GameLevelSudoku.class);
                 startActivity(intent);
             }
         });

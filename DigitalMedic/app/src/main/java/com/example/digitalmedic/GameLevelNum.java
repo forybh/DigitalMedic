@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class GameLevelNum extends AppCompatActivity{
     private Button btn_1;
+    private Button btn_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,16 @@ public class GameLevelNum extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(GameLevelNum.this, NumberGame.class);
+                startActivity(intent);
+            }
+        });
+
+
+        btn_back = (Button)findViewById(R.id.btn_back_num);
+        btn_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(GameLevelNum.this, Game.class);
                 startActivity(intent);
             }
         });

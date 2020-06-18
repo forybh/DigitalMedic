@@ -21,7 +21,7 @@ public class ChooseNumber extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sudoku_choose);
 
-        btn_back = (Button) findViewById(R.id.btn_back_sud);
+        btn_back = (Button) findViewById(R.id.btn_back_sud_choose);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

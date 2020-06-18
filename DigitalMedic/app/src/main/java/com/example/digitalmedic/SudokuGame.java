@@ -22,7 +22,7 @@ public class SudokuGame extends AppCompatActivity implements CellGroupFragment.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.activity_sudoku_board);
 
         btn_back = (Button) findViewById(R.id.btn_back_sud);
         btn_back.setOnClickListener(new View.OnClickListener() {
