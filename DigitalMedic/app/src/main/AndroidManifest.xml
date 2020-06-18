@@ -9,7 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".DementiaNotice"></activity>
+        <activity android:name=".UserInfo"></activity>
+        <activity android:name=".PanicNoticeSetting" />
+        <activity android:name=".DepressNoticeSetting" />
+        <activity android:name=".DementiaNoticeSetting" />
+        <activity android:name=".PanicBreath" />
+        <activity android:name=".DepressBreath" />
+        <activity android:name=".Meditation2" />
+        <activity android:name=".PanicAttend" />
+        <activity android:name=".Chat2" />
+        <activity android:name=".DepressInstruction" />
+        <activity android:name=".PanicNotice" />
+        <activity android:name=".DepressNotice" />
+        <activity android:name=".Chat" />
+        <activity android:name=".DementiaInstruction" />
+        <activity android:name=".DepressAttend" />
+        <activity android:name=".Depress" />
+        <activity android:name=".Meditation" />
+        <activity android:name=".DementiaChart" />
+        <activity android:name=".DementiaAttend" />
+        <activity android:name=".DementiaNotice" />
         <activity
             android:name=".IntroActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -22,10 +41,10 @@
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".GameLevel" />
         <activity android:name=".MemInit" />
         <activity android:name=".PanicVideo" />
@@ -35,7 +54,6 @@
         <activity android:name=".DepressVideo" />
         <activity android:name=".DepressResult" />
         <activity android:name=".DepressTest" />
-        <activity android:name=".Depress" />
         <activity android:name=".DementiaResult" />
         <activity android:name=".DementiaTest" />
         <activity android:name=".Dementia" />
