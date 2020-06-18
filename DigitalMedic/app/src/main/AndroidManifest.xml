@@ -9,43 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".UserInfo"></activity>
-        <activity android:name=".PanicNoticeSetting" />
-        <activity android:name=".DepressNoticeSetting" />
-        <activity android:name=".DementiaNoticeSetting" />
-        <activity android:name=".PanicBreath" />
-        <activity android:name=".DepressBreath" />
-        <activity android:name=".Meditation2" />
-        <activity android:name=".PanicAttend" />
-        <activity android:name=".Chat2" />
-        <activity android:name=".DepressInstruction" />
-        <activity android:name=".PanicNotice" />
-        <activity android:name=".DepressNotice" />
-        <activity android:name=".Chat" />
-        <activity android:name=".DementiaInstruction" />
-        <activity android:name=".DepressAttend" />
-        <activity android:name=".Depress" />
-        <activity android:name=".Meditation" />
-        <activity android:name=".DementiaChart" />
-        <activity android:name=".DementiaAttend" />
-        <activity android:name=".DementiaNotice" />
+
         <activity
             android:name=".IntroActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".GameLevel" />
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".PictureActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".DementiaNotice"/>
         <activity android:name=".MemInit" />
         <activity android:name=".PanicVideo" />
         <activity android:name=".PanicResult" />
@@ -54,6 +44,7 @@
         <activity android:name=".DepressVideo" />
         <activity android:name=".DepressResult" />
         <activity android:name=".DepressTest" />
+        <activity android:name=".Depress" />
         <activity android:name=".DementiaResult" />
         <activity android:name=".DementiaTest" />
         <activity android:name=".Dementia" />
@@ -63,11 +54,18 @@
         <activity android:name=".UserInfo"/>
         <activity android:name=".EditInfo"/>
         <activity android:name=".GameLevelNum"/>
+        <activity android:name=".GameLevelSudoku"/>
+        <activity android:name=".GameLevelPic"/>
         <activity android:name=".NumberGame"/>
+        <activity android:name=".SudokuGame"/>
+        <activity android:name=".ChooseNumber"/>
+        <activity android:name=".SudokuTemp"/>
+
+
+
 
     </application>
     <uses-permission android:name="android.permission.DIAL_PHONE" />
-
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
 </manifest>

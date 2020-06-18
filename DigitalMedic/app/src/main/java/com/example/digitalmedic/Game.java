@@ -32,7 +32,7 @@ public class Game extends AppCompatActivity {
         btn_sdoku.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Game.this, GameLevel.class);
+                Intent intent = new Intent(Game.this, GameLevelSudoku.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +50,7 @@ public class Game extends AppCompatActivity {
         btn_picture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Game.this, GameLevel.class);
+                Intent intent = new Intent(Game.this, GameLevelPic.class);
                 startActivity(intent);
             }
         });
