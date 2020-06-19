@@ -16,136 +16,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/title_select2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Go, mean talk"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/btn_chat1"
-        android:layout_width="200dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/chatbot_blue"
-        android:text="     안녕, 오늘도 같이 행복한         하루를 만들자!"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_chat2"
-        android:layout_width="180dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/chatbot_green"
-        android:text="너무 우울해..."
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_chat3"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/chatbot_green"
-        android:text="~~일 때문에 너무 힘들었어"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_chat_char1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/chat_face"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_chat_chr2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="340dp"
-        android:background="@drawable/chat_face"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_chat5"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="328dp"
-        android:background="@drawable/chatbot_blue"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="  힘들었겠구나.. 충분히 이해해" />
-
-    <Button
-        android:id="@+id/button21"
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="440dp"
-        android:layout_marginEnd="12dp"
-        android:background="@drawable/chatbot_green"
-        android:text="덕분에 기분이 나아졌어!"
-        android:textColor="#D61D5C"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="174dp"
-        android:layout_marginEnd="180dp"
-        android:layout_marginBottom="200dp"
-        android:text="..... 고민 상담 ....."
+        android:id="@+id/btn_gotest"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:background="@drawable/buttonshape2"
+        android:text="최근 자가진단 날짜 : 9일전                                       자가진단테스트 하러 가기"
         android:textColor="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button23"
-        android:layout_width="316dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="530dp"
-        android:background="@drawable/chat_box"
-        android:text="채팅을 입력하세요                                         "
-        android:textColor="#777777"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button24"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="68dp"
-        android:background="@android:drawable/checkbox_off_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="240dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

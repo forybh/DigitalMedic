@@ -34,6 +34,8 @@ public class Dementia extends AppCompatActivity {
     private Button btn_instruction;
     private Button btn_prev;
     private Button btn_next;
+    private Button btn_mission;
+    private Button btn_gotest;
     private String pNum;
 
     private ImageView sudoku_click;
@@ -52,6 +54,24 @@ public class Dementia extends AppCompatActivity {
 
         btn_prev = (Button) findViewById(R.id.button5);
         btn_next = (Button) findViewById(R.id.button6);
+        btn_gotest = findViewById(R.id.btn_gotest);
+        btn_mission = findViewById(R.id.btn_mission);
+
+        btn_mission.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this,DementiaAttend.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_gotest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dementia.this,DementiaTest.class);
+                startActivity(intent);
+            }
+        });
 
         btn_prev.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,7 +124,7 @@ public class Dementia extends AppCompatActivity {
         flipper.setOutAnimation(this, android.R.anim.slide_out_right);
 
         //자동으로 넘어가기
-        flipper.setFlipInterval(2000);
+        flipper.setFlipInterval(3000);
         flipper.startFlipping();
 
         btn_user = (Button) findViewById(R.id.btn_user);
@@ -163,7 +183,8 @@ public class Dementia extends AppCompatActivity {
                         }
                     }
                 });
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + pNum));
+                String tel = "tel:" + pNum;
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(tel));
                 startActivity(intent);
             }
         });

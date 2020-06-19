@@ -66,6 +66,25 @@
             android:background="@drawable/buttonshape2"
             android:src="@drawable/match_picture"/>
 
+        <Button
+            android:id="@+id/btn_mission"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@drawable/buttonshape2"
+            android:text="오늘의 미션                                       게임 3판, 자가진단 테스트하기, 오늘 있었던 일 적기"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/btn_gotest"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@drawable/buttonshape2"
+            android:text="최근 자가진단 날짜 : 9일전                                       자가진단테스트 하러 가기"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            />
+
     </ViewFlipper>
 
 

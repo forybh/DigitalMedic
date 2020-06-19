@@ -35,6 +35,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".DementiaNotice" />
+        <activity android:name=".DementiaChart" />
         <activity android:name=".MemInit" />
         <activity android:name=".PanicVideo" />
         <activity android:name=".PanicResult" />
@@ -44,9 +45,20 @@
         <activity android:name=".DepressResult" />
         <activity android:name=".DepressTest" />
         <activity android:name=".Depress" />
+        <activity android:name=".DepressBreath" />
+        <activity android:name=".DepressInstruction" />
+        <activity android:name=".DepressNoticeSetting" />
+        <activity android:name=".Meditation" />
+        <activity android:name=".Meditation2" />
+        <activity android:name=".DementiaNoticeSetting" />
         <activity android:name=".DementiaResult" />
         <activity android:name=".DementiaTest" />
         <activity android:name=".Dementia" />
+        <activity android:name=".DementiaInstruction" />
+        <activity android:name=".DementiaAttend" />
+        <activity android:name=".DepressAttend" />
+        <activity android:name=".PanicAttend" />
+        <activity android:name=".DepressNotice" />
         <activity android:name=".Game" />
         <activity android:name=".LogIn" />
         <activity android:name=".SignUp" />
@@ -59,6 +71,11 @@
         <activity android:name=".SudokuGame" />
         <activity android:name=".ChooseNumber" />
         <activity android:name=".SudokuTemp" />
+        <activity android:name=".PanicBreath" />
+        <activity android:name=".PanicInstruction" />
+        <activity android:name=".PanicNotice" />
+        <activity android:name=".PanicNoticeSetting" />
+
     </application>
     <uses-permission android:name="android.permission.DIAL_PHONE" />
 
