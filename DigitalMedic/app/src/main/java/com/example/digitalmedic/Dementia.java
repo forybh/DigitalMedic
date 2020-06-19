@@ -104,7 +104,6 @@ public class Dementia extends AppCompatActivity {
         flipper.setOutAnimation(this, android.R.anim.slide_out_right);
 
         //자동으로 넘어가기
-
         flipper.setFlipInterval(2000);
         flipper.startFlipping();
 
