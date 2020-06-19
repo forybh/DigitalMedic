@@ -101,7 +101,7 @@ public class Panic extends AppCompatActivity {
         btn_chatting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Panic.this, Chat2.class);
+                Intent intent = new Intent(Panic.this, PanicChat.class);
                 startActivity(intent);
             }
         });

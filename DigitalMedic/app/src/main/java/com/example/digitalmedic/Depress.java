@@ -96,11 +96,11 @@ public class Depress extends AppCompatActivity {
             }
         });
 
-        btn_chatting = findViewById(R.id.btn_chatting);
+        btn_chatting = (Button)findViewById(R.id.btn_chatting);
         btn_chatting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, Chat.class);
+                Intent intent = new Intent(Depress.this, DepressChat.class);
                 startActivity(intent);
             }
         });
