@@ -47,6 +47,10 @@
         <activity android:name=".Depress" />
         <activity android:name=".DementiaResult" />
         <activity android:name=".DementiaTest" />
+        <activity android:name=".DementiaChart"/>
+        <activity android:name=".DementiaAttend"/>
+        <activity android:name=".DementiaInstruction"/>
+        <activity android:name=".DementiaNoticeSetting"/>
         <activity android:name=".Dementia" />
         <activity android:name=".Game" />
         <activity android:name=".LogIn" />
