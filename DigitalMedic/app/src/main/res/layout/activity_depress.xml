@@ -68,6 +68,26 @@
             android:background="@drawable/buttonshape2"
             android:src="@drawable/breath"/>
 
+        <Button
+            android:id="@+id/btn_mission"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@drawable/buttonshape2"
+            android:text="오늘의 미션                                       명언 따라 적기, 명상 강의보기, 고민톡과 대화"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/btn_gotest"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:background="@drawable/buttonshape2"
+            android:text="최근 자가진단 날짜 : 9일전                                       자가진단테스트 하러 가기"
+            android:textColor="#000000"
+            android:textSize="24sp"
+             />
+
+
     </ViewFlipper>
 
 

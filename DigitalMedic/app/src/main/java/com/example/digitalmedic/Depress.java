@@ -24,6 +24,8 @@ public class Depress extends AppCompatActivity {
     private Button btn_instruction;
     private Button btn_prev;
     private Button btn_next;
+    private Button btn_mission;
+    private Button btn_gotest;
     private ImageView depress_breath;
 
     @Override
@@ -38,13 +40,31 @@ public class Depress extends AppCompatActivity {
         flipper.setOutAnimation(this, android.R.anim.slide_out_right);
 
         //자동으로 넘어가기
-        flipper.setFlipInterval(2000);
+        flipper.setFlipInterval(3000);
         flipper.startFlipping();
 
 
         btn_prev = findViewById(R.id.button5);
         btn_next = findViewById(R.id.button6);
         depress_breath = (ImageView)findViewById(R.id.depress_breath);
+        btn_gotest = findViewById(R.id.btn_gotest);
+        btn_mission = findViewById(R.id.btn_mission);
+
+        btn_mission.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Depress.this,DepressAttend.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_gotest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Depress.this,DepressTest.class);
+                startActivity(intent);
+            }
+        });
 
         btn_prev.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,11 +116,11 @@ public class Depress extends AppCompatActivity {
             }
         });
 
-        btn_chatting = findViewById(R.id.btn_chatting);
+        btn_chatting = (Button)findViewById(R.id.btn_chatting);
         btn_chatting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Depress.this, Chat.class);
+                Intent intent = new Intent(Depress.this, DepressChat.class);
                 startActivity(intent);
             }
         });

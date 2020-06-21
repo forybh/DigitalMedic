@@ -46,11 +46,11 @@ public class UserInfo extends AppCompatActivity {
                     DocumentSnapshot document = task.getResult();
                     String data[] = document.getData().values().toArray(new String[5]);
                     Log.d(TAG, "get failed with "+ document.getData().values());
-                    setName.setText("이름 " + data[1]);
-                    setIll.setText("병명 " + data[3]);
-                    setPhone.setText("핸드폰 번호 " + data[0]);
-                    setMomPhone.setText("보호자 번호 " + data[2]);
-                    setAddress.setText("주소 " + data[4]);
+                    setName.setText(data[1]);
+                    setIll.setText(data[3]);
+                    setPhone.setText( data[0]);
+                    setMomPhone.setText(data[2]);
+                    setAddress.setText(data[4]);
                 } else {
                     Log.d(TAG, "get failed with ", task.getException());
                 }

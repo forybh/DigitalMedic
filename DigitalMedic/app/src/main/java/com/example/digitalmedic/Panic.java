@@ -26,6 +26,8 @@ public class Panic extends AppCompatActivity {
     private Button btn_instruction;
     private Button btn_prev;
     private Button btn_next;
+    private Button btn_mission;
+    private Button btn_gotest;
     private ImageView panic_breath;
 
     @Override
@@ -40,13 +42,32 @@ public class Panic extends AppCompatActivity {
         flipper.setOutAnimation(this, android.R.anim.slide_out_right);
 
         //자동으로 넘어가기
-        flipper.setFlipInterval(2000);
+        flipper.setFlipInterval(3000);
         flipper.startFlipping();
 
 
         btn_prev = findViewById(R.id.button5);
         btn_next = findViewById(R.id.button6);
         panic_breath = (ImageView)findViewById(R.id.panic_breath);
+
+        btn_gotest = findViewById(R.id.btn_gotest);
+        btn_mission = findViewById(R.id.btn_mission);
+
+        btn_mission.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Panic.this,PanicAttend.class);
+                startActivity(intent);
+            }
+        });
+
+        btn_gotest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Panic.this,PanicTest.class);
+                startActivity(intent);
+            }
+        });
 
         btn_prev.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,7 +122,7 @@ public class Panic extends AppCompatActivity {
         btn_chatting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Panic.this, Chat2.class);
+                Intent intent = new Intent(Panic.this, PanicChat.class);
                 startActivity(intent);
             }
         });
