@@ -53,13 +53,9 @@
         <activity android:name=".DementiaNoticeSetting" />
         <activity android:name=".DementiaResult" />
         <activity android:name=".DementiaTest" />
-        <activity android:name=".DementiaChart"/>
         <activity android:name=".DementiaAttend"/>
         <activity android:name=".DementiaInstruction"/>
-        <activity android:name=".DementiaNoticeSetting"/>
         <activity android:name=".Dementia" />
-        <activity android:name=".DementiaInstruction" />
-        <activity android:name=".DementiaAttend" />
         <activity android:name=".DepressAttend" />
         <activity android:name=".PanicAttend" />
         <activity android:name=".DepressNotice" />
