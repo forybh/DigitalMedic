@@ -183,7 +183,6 @@ public class Dementia extends AppCompatActivity {
                         }
                     }
                 });
-                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:01012341234"));
                 String tel = "tel:" + pNum;
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(tel));
                 startActivity(intent);
