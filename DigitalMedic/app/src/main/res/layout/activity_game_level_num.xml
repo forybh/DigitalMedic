@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/btn_1_num"
+        android:id="@+id/btn_1"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginBottom="76dp"
@@ -52,7 +52,7 @@
         android:background="@drawable/level2"
         android:text="2"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_1_num"
+        app:layout_constraintBottom_toTopOf="@+id/btn_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent" />

@@ -15,7 +15,7 @@ public class GameLevelNum extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_level_num);
 
-        btn_1 = (Button)findViewById(R.id.btn_1_num);
+        btn_1 = (Button)findViewById(R.id.btn_1);
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,8 +24,7 @@ public class GameLevelNum extends AppCompatActivity{
             }
         });
 
-
-        btn_back = (Button)findViewById(R.id.btn_back_num);
+        btn_back = (Button)findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
